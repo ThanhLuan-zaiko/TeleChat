@@ -1,51 +1,60 @@
-# TeleChat Project
+<p align="center">
+  <img src="telechat_banner.png" alt="TeleChat Banner" width="100%">
+</p>
 
-Dự án TeleChat là một ứng dụng nhắn tin thời gian thực hiện đại, được xây dựng với mục tiêu cung cấp trải nghiệm mượt mà và giao diện đẹp mắt.
-Tập trung vào tốc độ, tính bảo mật và trải nghiệm người dùng mượt mà. Dự án được xây dựng theo mô hình Client-Server sử dụng WebSocket để đảm bảo độ trễ thấp nhất.
+# 🚀 TeleChat Project
 
-🚀 Tính Năng Chính
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+Dự án **TeleChat** là một ứng dụng nhắn tin thời gian thực hiện đại, được xây dựng với mục tiêu cung cấp trải nghiệm mượt mà và giao diện đẹp mắt. Tập trung vào tốc độ, tính bảo mật và trải nghiệm người dùng mượt mà. Dự án được xây dựng theo mô hình Client-Server sử dụng WebSocket để đảm bảo độ trễ thấp nhất.
+
+---
+
+## ✨ Tính Năng Chính
+
 Dựa trên yêu cầu hiện đại của các ứng dụng nhắn tin, TeleChat cung cấp:
 
-💬 Nhắn tin cơ bản & Nâng cao
-Chat 1-1 & Group Chat: Trò chuyện riêng tư hoặc tạo nhóm chat không giới hạn.
+### 💬 Nhắn tin cơ bản & Nâng cao
+-   **Chat 1-1 & Group Chat:** Trò chuyện riêng tư hoặc tạo nhóm chat không giới hạn.
+-   **Lịch sử tin nhắn:** Lưu trữ và đồng bộ tin nhắn qua PostgreSQL.
+-   **Gửi tệp tin:** Hỗ trợ chia sẻ file đa phương tiện (ảnh, tài liệu).
+-   **Tương tác tin nhắn:** Thả cảm xúc (Message Reactions) cho từng tin nhắn.
 
-Lịch sử tin nhắn: Lưu trữ và đồng bộ tin nhắn qua PostgreSQL.
+### ⚡ Trải nghiệm Thời gian thực (Real-time)
+-   **WebSocket:** Nhận tin nhắn ngay lập tức không cần tải lại trang.
+-   **Typing Indicator:** Hiển thị trạng thái "đang gõ..." của đối phương.
+-   **Online Status:** Biết khi nào bạn bè đang hoạt động.
+-   **Read Receipts:** Hiển thị trạng thái "Đã xem" tin nhắn.
 
-Gửi tệp tin: Hỗ trợ chia sẻ file đa phương tiện (ảnh, tài liệu).
+### 🔒 Bảo mật (Security)
+-   **Xác thực:** Sử dụng JWT (JSON Web Tokens) an toàn.
+-   **Mã hóa:** Tích hợp CryptoJS để mã hóa dữ liệu phía Client.
 
-Tương tác tin nhắn: Thả cảm xúc (Message Reactions) cho từng tin nhắn.
+---
 
-⚡ Trải nghiệm Thời gian thực (Real-time)
-WebSocket: Nhận tin nhắn ngay lập tức không cần tải lại trang.
-
-Typing Indicator: Hiển thị trạng thái "đang gõ..." của đối phương.
-
-Online Status: Biết khi nào bạn bè đang hoạt động.
-
-Read Receipts: Hiển thị trạng thái "Đã xem" tin nhắn.
-
-🔒 Bảo mật (Security)
-Xác thực: Sử dụng JWT (JSON Web Tokens) an toàn.
-
-Mã hóa: Tích hợp CryptoJS để mã hóa dữ liệu phía Client.
-
-🛠 Công Nghệ Sử Dụng
+## 🛠 Công Nghệ Sử Dụng
 
 ### Backend
-- **Ngôn ngữ:** Python
-- **Framework:** FastAPI
-- **Database:** PostgreSQL (sử dụng SQLAlchemy & AsyncPG)
-- **Websocket:** Hỗ trợ nhắn tin thời gian thực
+-   **Ngôn ngữ:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+-   **Framework:** ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi)
+-   **Database:** ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql) (SQLAlchemy & AsyncPG)
+-   **Websocket:** Nhắn tin thời gian thực.
 
 ### Frontend
-- **Framework:** React (Vite)
-- **Styling:** TailwindCSS
-- **Ngôn ngữ:** TypeScript
-- **CryptoJS:** Thư viện mã hóa
+-   **Framework:** ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) (Vite)
+-   **Styling:** ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+-   **Ngôn ngữ:** ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+-   **CryptoJS:** Mã hóa dữ liệu.
 
-🛠 Cấu Trúc Thư Mục
+---
 
-```
+## 📂 Cấu Trúc Thư Mục
+
+```bash
 TeleChat/
 ├── Backend/                # Mã nguồn Backend (FastAPI)
 │   ├── app/                # Logic chính của ứng dụng
@@ -74,63 +83,55 @@ TeleChat/
 └── README.md               # Tài liệu dự án
 ```
 
-⚙️ Yêu Cầu Hệ Thống
+---
 
-- Python >= 3.14
-- Node.js & npm (phiên bản mới nhất)
-- PostgreSQL
+## ⚙️ Yêu Cầu Hệ Thống
 
-🛠 Hướng Dẫn Cài Đặt
+-   **Python** >= 3.14
+-   **Node.js & npm** (mới nhất)
+-   **PostgreSQL**
 
-1. Backend Setup (cài đặt môi trường)
-Di chuyển vào thư mục Backend:
-cd Backend
+---
 
-Cài đặt các thư viện phụ thuộc (khuyến nghị sử dụng `uv` nếu có, hoặc pip):
-pip install -e .
+## 🚀 Hướng Dẫn Cài Đặt
 
-# Tạo môi trường ảo (nếu chưa có)
-python -m venv venv
-source venv/bin/activate  # Trên Windows: venv\Scripts\activate
-
-# Cài đặt thư viện
-pip install -e . (nếu dùng pip)
-uv sync (nếu dùng trình quản lý gói uv)
-
-Cấu hình môi trường:
-
-Copy file .env.example thành .env (nếu có) hoặc tạo mới file .env.
-
-Điền thông tin Database URL và Secret Key.
-
-2. Khởi tạo cơ sở dữ liệu:
-
-cd DataBase
-
+### 1. Backend Setup
 ```bash
+cd Backend
+# Tạo môi trường ảo
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Cài đặt dependencies
+pip install -e .
+# Hoặc dùng uv
+uv sync
+```
+> [!NOTE]
+> Tạo file `.env` từ `.env.example` và điền `DATABASE_URL` và `SECRET_KEY`.
+
+### 2. Khởi tạo Cơ sở dữ liệu
+```bash
+cd DataBase
 ./init_db.sh
 ```
-Lưu ý: Trong dự án này chúng tôi sử dụng file init_db.sh để khởi tạo cơ sở dữ liệu bởi vì dự án được code trên Linux và dùng docker để chạy môi trường, nếu bạn muốn chạy dự án trên Windows hãy tạo một file mới và thêm các câu lệnh SQL cần thiết để tạo cơ sở dữ liệu.
+> [!IMPORTANT]
+> `init_db.sh` dành cho Linux/Docker. Trên Windows, hãy chạy câu lệnh SQL thủ công.
 
-3. Frontend Setup (cài đặt môi trường)
-
-Di chuyển vào thư mục Frontend:
+### 3. Frontend Setup
+```bash
 cd Frontend
-
-Cài đặt dependencies:
 npm install
+```
 
-4. Run the Application (khởi động ứng dụng)
+### 4. Khởi động Ứng dụng
+-   **Backend:** `uvicorn main:app --reload`
+-   **Frontend:** `npm run dev`
+-   **Truy cập địa chỉ:** `http://localhost:5173`
 
-Backend:
-cd Backend
-uvicorn main:app --reload
+---
 
-Frontend:
-cd Frontend
-npm run dev
+## 🌐 Deployment
 
-Truy cập ứng dụng tại địa chỉ hiển thị trên terminal (thường là http://localhost:5173).
-
-### Link deloy của chúng tôi
-- Truy cập địa chỉ tại: https://web-chat-lemon.vercel.app/
+Dự án hiện đang được triển khai tại:
+👉 **[TeleChat Live Demo](https://web-chat-lemon.vercel.app/)**
